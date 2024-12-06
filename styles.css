@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: #101820; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background: #1f2833;
+    color: #66fcf1;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #45a29e;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #c5c6c7;
+}
+
+.sidebar {
+    background: #0b0c10;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px;
+    border-right: 2px solid #45a29e;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #66fcf1;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    color: #c5c6c7;
+}
+
+.content {
+    margin-left: 220px; /* To account for sidebar width */
+    padding: 20px;
+    flex: 1;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #66fcf1;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #45a29e;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #101820;
+    font-weight: bold;
+}
+
+.experience-item, .project-item {
+    margin-bottom: 20px;
+    background: #1f2833;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #0b0c10;
+    color: #66fcf1;
+    border-top: 2px solid #45a29e;
+}
